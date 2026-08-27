@@ -1,0 +1,143 @@
+.built-for-leaders {
+  width: 100%;
+  min-height: 795px;
+  background: #e5eeff;
+  padding: 100px 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.built-for-leaders__card {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  min-height: 595px;
+  background: #0b1c30;
+  border-radius: 54px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.built-for-leaders__mesh {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.built-for-leaders__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 814px;
+  padding: 100px 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.built-for-leaders__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  background: #c7c4d74d;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.built-for-leaders__heading {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.built-for-leaders__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.built-for-leaders__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.built-for-leaders__list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .built-for-leaders {
+    padding: 64px 24px 0;
+  }
+
+  .built-for-leaders__content {
+    padding: 60px 32px;
+  }
+
+  .built-for-leaders__heading {
+    font-size: 26px;
+  }
+
+  .built-for-leaders__subtext {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 600px) {
+  .built-for-leaders {
+    min-height: auto;
+    padding: 64px 16px 64px;
+  }
+
+  .built-for-leaders__card {
+    border-radius: 24px;
+    min-height: auto;
+  }
+
+  .built-for-leaders__content {
+    padding: 40px 24px;
+    gap: 20px;
+  }
+
+  .built-for-leaders__heading {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .built-for-leaders__mesh {
+    opacity: 0.4;
+  }
+}

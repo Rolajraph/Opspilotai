@@ -1,0 +1,122 @@
+.why-opspilot {
+  width: 100%;
+  min-height: 969px;
+  background: #e5eeff;
+  padding: 100px 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-opspilot__header {
+  max-width: 988px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-opspilot__heading {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #131b2e;
+  margin: 0;
+}
+
+.why-opspilot__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #131b2e;
+  margin: 0;
+}
+
+.why-opspilot__grid {
+  width: 100%;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 54px 35px;
+}
+.why-opspilot__card {
+  background: #dae2fd;
+  border-radius: 8px;
+  padding: 14px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.why-opspilot__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 200%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.why-opspilot__card-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #131b2e;
+  margin: 0;
+}
+
+.why-opspilot__card-description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464554;
+  margin: 0;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .why-opspilot__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-opspilot__heading {
+    font-size: 26px;
+  }
+
+  .why-opspilot__subtext {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+/* Mobile: single column */
+@media (max-width: 600px) {
+  .why-opspilot {
+    padding: 64px 20px 64px;
+    min-height: auto;
+  }
+
+  .why-opspilot__header {
+    margin-bottom: 40px;
+  }
+
+  .why-opspilot__heading {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .why-opspilot__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

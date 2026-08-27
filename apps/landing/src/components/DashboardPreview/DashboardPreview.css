@@ -1,0 +1,162 @@
+.dashboard-preview {
+  position: relative;
+  width: 100%;
+  min-height: 1330px;
+  background: #e5eeff;
+}
+
+.dashboard-preview__intro {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 64px 24px 0;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #131b2e;
+}
+/* Fixed 1440px design canvas — cards are positioned exactly as
+   specified in Figma. Scales down proportionally on smaller screens. */
+.dashboard-preview__canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  max-width: 100%;
+  height: 1330px;
+}
+
+.dp-card {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.dp-card--efficiency {
+  width: 297.33px;
+  height: 192px;
+  top: 366px;
+  left: 571px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  object-fit: cover;
+}
+
+.dp-card--attendance {
+  width: 302.67px;
+  height: 174px;
+  top: 587px;
+  left: 255px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp-card--attendance img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dp-card--icon {
+  width: 101px;
+  height: 101px;
+  top: 637px;
+  left: 669px;
+  border-radius: 25.25px;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp-card--compliance {
+  width: 302.67px;
+  height: 410px;
+  top: 587px;
+  left: 888px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  object-fit: cover;
+}
+
+.dp-card--meetings {
+  width: 297.33px;
+  height: 284.5px;
+  top: 868px;
+  left: 570px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.dp-card--meetings img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dp-card--icon-img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Below 1440px, scale the whole canvas down so absolute positions
+   stay proportionally correct */
+   
+@media (max-width: 1440px) and (min-width: 901px) {
+  .dashboard-preview__canvas {
+    transform: translateX(-50%) scale(calc(100vw / 1440));
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-preview {
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .dashboard-preview__intro {
+    font-size: 22px;
+    line-height: 130%;
+    padding-top: 48px;
+  }
+
+  .dashboard-preview__canvas {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px 0;
+  }
+
+  .dp-card {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .dp-card--efficiency,
+  .dp-card--compliance,
+  .dp-card--attendance,
+  .dp-card--meetings {
+    height: auto;
+  }
+
+  .dp-card--icon {
+    order: -1;
+  }
+}

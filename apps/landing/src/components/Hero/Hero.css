@@ -1,0 +1,167 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 801px;
+  background: linear-gradient(
+    0deg,
+    var(--color-gradient-top) 15.45%,
+    var(--color-gradient-mid) 51.21%,
+    var(--color-gradient-bottom) 91.21%
+  );
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero__mesh {
+  position: absolute;
+  width: 1228px;
+  max-width: 90%;
+  height: 467px;
+  top: 213px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 0.49px solid transparent;
+  background: radial-gradient(
+      36.1% 36.25% at 50% 50%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    )
+    border-box;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 752px;
+  margin: 0 auto;
+  padding: 260px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-hero-heading);
+  line-height: 100%;
+  letter-spacing: var(--ls-hero-heading);
+  color: var(--color-white);
+  margin: 0 0 24px;
+}
+
+.hero__heading em {
+  font-style: italic;
+}
+
+.hero__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-hero-subtext);
+  line-height: 130%;
+  color: var(--color-white);
+  margin: 0 0 40px;
+  max-width: 620px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero__btn--primary {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.hero__btn--secondary {
+  background: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+.hero__trust-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 20px;
+}
+
+.hero__trust-bar {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Temporary text placeholders — swap this block for a single
+   <img src={trustBar} alt="Our partners"> once logo-trustbar.png lands */
+.hero__trust-bar-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .hero__content {
+    padding-top: 180px;
+  }
+
+  .hero__heading {
+    font-size: 44px;
+  }
+
+  .hero__subtext {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__content {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+
+  .hero__heading {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .hero__subtext {
+    font-size: 17px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+}

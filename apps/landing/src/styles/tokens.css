@@ -1,0 +1,33 @@
+/**
+ * Design tokens — sourced directly from the OpsPilot AI Figma file.
+ * Keep every raw hex/font value here. Components should reference
+ * these CSS custom properties, never hardcode a hex value inline.
+ */
+
+:root {
+  /* Colors — core palette */
+  --color-white: #ffffff;
+  --color-white-85: #ffffffd9; /* navbar pill background */
+  --color-primary: #4648d4;     /* navbar CTA bg / hero CTA text */
+  --color-primary-light: #acadff; /* "Learn more" button bg */
+
+  /* Hero gradient stops */
+  --color-gradient-top: #8687d1;
+  --color-gradient-mid: #2d3281;
+  --color-gradient-bottom: #131b2e;
+
+  /* Typography */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --fs-hero-heading: 64px;
+  --fs-hero-subtext: 32px;
+  --ls-hero-heading: -2.24px;
+
+  /* Layout */
+  --radius-pill: 50px;
+  --radius-button: 8px;
+
+  --container-max-width: 1440px;
+  --navbar-max-width: 1251px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "opspilotai",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "server"
+  ]
+}
