@@ -13,7 +13,6 @@
   justify-content: center;
 }
 
-
 .hero__mesh {
   position: absolute;
   width: 1228px;
@@ -115,8 +114,6 @@
   justify-content: center;
 }
 
-/* Temporary text placeholders — swap this block for a single
-   <img src={trustBar} alt="Our partners"> once logo-trustbar.png lands */
 .hero__trust-bar-image {
   max-width: 100%;
   height: auto;
