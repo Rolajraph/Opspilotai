@@ -935,3 +935,38 @@
     font-size: 16px;
   }
 }
+
+/* Mobile Actions Drawer Container */
+.navbar__mobile-actions {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar__links--open .navbar__mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(26, 26, 46, 0.1);
+  }
+
+  .navbar__mobile-actions .navbar__signin,
+  .navbar__mobile-actions .navbar__cta {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .navbar__mobile-actions .navbar__signin {
+    padding: 10px;
+    border-radius: var(--radius-button);
+    background: #f4f4ff;
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+}
