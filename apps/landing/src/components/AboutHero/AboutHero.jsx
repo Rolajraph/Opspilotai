@@ -1,5 +1,5 @@
 import { useState } from "react";
-import dashboardImage from "../../assets/images/Rectangle-image.png";
+import dashboardImage from "../../assets/images/rectangle-image.png";
 import "./AboutHero.css";
 
 /**
