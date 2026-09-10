@@ -1,0 +1,136 @@
+.request-demo-form {
+  width: 625px;
+  max-width: 100%;
+  min-height: 673.5px;
+  padding: 66.75px 63.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.request-demo-form__heading {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 24px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.request-demo-form__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #475569;
+  margin: 0 0 8px;
+}
+
+.request-demo-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.request-demo-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.request-demo-form__label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.request-demo-form__label span {
+  color: #dc2626;
+}
+
+.request-demo-form__input,
+.request-demo-form__select {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.request-demo-form__input::placeholder {
+  color: #94a3b8;
+}
+
+.request-demo-form__row {
+  display: flex;
+  gap: 16px;
+}
+
+.request-demo-form__error {
+  color: #dc2626;
+  font-family: var(--font-body);
+  font-size: 13px;
+  margin: 0;
+}
+
+.request-demo-form__submit {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.request-demo-form__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .request-demo-form {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 40px 24px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+  }
+
+  .request-demo-form__row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .request-demo-form {
+    padding: 32px 20px;
+  }
+
+  .request-demo-form__heading {
+    font-size: 22px;
+  }
+
+  .request-demo-form__subtext {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

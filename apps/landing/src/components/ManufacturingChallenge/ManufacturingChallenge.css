@@ -1,0 +1,74 @@
+.manufacturing-challenge {
+  width: 100%;
+  min-height: 581px;
+  background: #f5f8ff;
+  padding: 110px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.manufacturing-challenge__content {
+  width: 728px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.manufacturing-challenge__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 143px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #dae2fd;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.manufacturing-challenge__heading {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #131b2e;
+  margin: 0;
+}
+
+.manufacturing-challenge__text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #131b2e;
+  margin: 0;
+  max-width: 693px;
+}
+
+@media (max-width: 900px) {
+  .manufacturing-challenge {
+    min-height: auto;
+    padding: 64px 20px;
+  }
+
+  .manufacturing-challenge__heading {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .manufacturing-challenge__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}

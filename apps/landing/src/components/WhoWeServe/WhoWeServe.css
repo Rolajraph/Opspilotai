@@ -1,0 +1,387 @@
+/* =========================================================
+   WHO WE SERVE
+   ========================================================= */
+
+.who-we-serve {
+  width: 100%;
+  min-height: 1005px;
+
+  background: #f5f8ff;
+
+  padding: 100px 24px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BADGE
+   ========================================================= */
+
+.who-we-serve__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  min-width: 144px;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  background: #dae2fd;
+
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-primary);
+
+  white-space: nowrap;
+
+  margin-bottom: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.who-we-serve__header {
+  width: 100%;
+  max-width: 814px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.who-we-serve__heading {
+  font-family: var(--font-body);
+  font-weight: 500;
+
+  font-size: 32px;
+  line-height: 39.2px;
+
+  letter-spacing: 0;
+
+  color: #131b2e;
+
+  margin: 0;
+}
+
+.who-we-serve__subtext {
+  width: 100%;
+
+  font-family: var(--font-body);
+  font-weight: 400;
+
+  font-size: 24px;
+  line-height: 39.2px;
+
+  letter-spacing: 0;
+
+  color: #131b2e;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.who-we-serve__grid {
+  width: 100%;
+  max-width: 1240px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 54px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.who-we-serve__card {
+  width: 100%;
+  min-width: 0;
+  min-height: 161px;
+
+  background: #eaeffe;
+
+  border-radius: 8px;
+
+  padding: 14px 11px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.who-we-serve__icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.who-we-serve__card-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+
+  font-size: 24px;
+  line-height: 100%;
+
+  color: #131b2e;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.who-we-serve__card-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #464554;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+  .who-we-serve {
+    padding: 80px 24px 64px;
+  }
+
+  .who-we-serve__header {
+    margin-bottom: 48px;
+  }
+
+  .who-we-serve__heading {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .who-we-serve__subtext {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .who-we-serve__grid {
+    max-width: 760px;
+    gap: 32px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE / TABLET PHONE
+   Keep 2 columns
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .who-we-serve {
+    min-height: auto;
+
+    padding: 64px 20px 64px;
+  }
+
+  .who-we-serve__badge {
+    min-width: auto;
+
+    height: 36px;
+
+    padding: 6px 14px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .who-we-serve__header {
+    margin-bottom: 40px;
+
+    gap: 8px;
+  }
+
+  .who-we-serve__heading {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .who-we-serve__subtext {
+    font-size: 17px;
+    line-height: 150%;
+  }
+
+  .who-we-serve__grid {
+    width: 100%;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px 20px;
+  }
+
+  .who-we-serve__card {
+    min-height: 242px;
+
+    padding: 14px 10px;
+
+    gap: 12px;
+  }
+
+  .who-we-serve__card-title {
+    font-size: 21px;
+    line-height: 110%;
+  }
+
+  .who-we-serve__card-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .who-we-serve {
+    padding: 52px 16px 52px;
+  }
+
+  .who-we-serve__header {
+    margin-bottom: 32px;
+  }
+
+  .who-we-serve__heading {
+    font-size: 22px;
+  }
+
+  .who-we-serve__subtext {
+    font-size: 16px;
+  }
+
+  .who-we-serve__grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    max-width: 360px;
+  }
+
+  .who-we-serve__card {
+    min-height: 0;
+
+    padding: 16px;
+
+    gap: 12px;
+  }
+
+  .who-we-serve__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .who-we-serve__card-title {
+    font-size: 21px;
+  }
+
+  .who-we-serve__card-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .who-we-serve {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .who-we-serve__heading {
+    font-size: 20px;
+  }
+
+  .who-we-serve__subtext {
+    font-size: 15px;
+  }
+
+  .who-we-serve__card {
+    padding: 14px;
+  }
+
+  .who-we-serve__card-title {
+    font-size: 20px;
+  }
+
+  .who-we-serve__card-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,122 @@
+.tech-cta {
+  width: 100%;
+  min-height: 581px;
+  background: #f5f8ff;
+  padding: 100px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-cta__card {
+  width: 100%;
+  max-width: 1240px;
+  min-height: 381px;
+  background: var(--color-primary);
+  border-radius: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+}
+
+.tech-cta__content {
+  width: 100%;
+  max-width: 814px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.tech-cta__heading {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.tech-cta__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39.2px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.tech-cta__actions {
+  display: flex;
+  gap: 16px;
+}
+
+.tech-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tech-cta__btn--primary {
+  background: #ffffff;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.tech-cta__btn--secondary {
+  background: var(--color-primary-light);
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .tech-cta__card {
+    padding: 60px 40px;
+  }
+
+  .tech-cta__heading {
+    font-size: 28px;
+  }
+
+  .tech-cta__subtext {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-cta {
+    min-height: auto;
+    padding: 64px 20px;
+  }
+
+  .tech-cta__card {
+    border-radius: 24px;
+    padding: 48px 20px;
+  }
+
+  .tech-cta__heading {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .tech-cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tech-cta__btn {
+    width: 100%;
+  }
+}

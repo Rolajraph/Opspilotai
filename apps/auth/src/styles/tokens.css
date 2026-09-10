@@ -1,0 +1,16 @@
+:root {
+  --color-white: #ffffff;
+  --color-white-85: #ffffffd9;
+  --color-primary: #4648d4;
+  --color-primary-light: #acadff;
+
+  --color-gradient-top: #8687d1;
+  --color-gradient-mid: #2d3281;
+  --color-gradient-bottom: #131b2e;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius-pill: 50px;
+  --radius-button: 8px;
+}

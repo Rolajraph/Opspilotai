@@ -1,0 +1,152 @@
+.healthcare-hero {
+  position: relative;
+  width: 100%;
+  min-height: 801px;
+  background: #e5eeff;
+  padding: 180px 24px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.healthcare-hero__content {
+  width: 627px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.healthcare-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 116px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #dae2fd;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.healthcare-hero__heading {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 76px;
+  letter-spacing: 0;
+  color: #131b2e;
+  margin: 0;
+}
+
+.healthcare-hero__subtext {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #464554;
+  margin: 0;
+  max-width: 604px;
+}
+
+.healthcare-hero__form {
+  width: 543px;
+  max-width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 50px;
+  background: #ffffffd9;
+  backdrop-filter: blur(4px);
+}
+
+.healthcare-hero__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: #131b2e;
+}
+
+.healthcare-hero__input::placeholder {
+  color: #464554;
+}
+
+.healthcare-hero__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.healthcare-hero__image {
+  width: 498px;
+  max-width: 100%;
+  height: 472px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: -8px;
+}
+
+@media (max-width: 1200px) {
+  .healthcare-hero {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .healthcare-hero__heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .healthcare-hero {
+    padding: 140px 20px 64px;
+  }
+
+  .healthcare-hero__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .healthcare-hero__form {
+    height: auto;
+    flex-direction: column;
+    border-radius: 24px;
+    gap: 12px;
+  }
+
+  .healthcare-hero__cta {
+    width: 100%;
+  }
+
+  .healthcare-hero__image {
+    height: auto;
+  }
+}

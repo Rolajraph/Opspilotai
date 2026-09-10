@@ -1,0 +1,111 @@
+.healthcare-benefits {
+  width: 100%;
+  min-height: 511px;
+  background: radial-gradient(
+      ellipse 500px 300px at 50% 40%,
+      #f5f8ff 0%,
+      rgba(245, 248, 255, 0) 100%
+    ),
+    linear-gradient(180deg, #c8d3e8 0%, #f5f8ff 100%);
+  padding: 100px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.healthcare-benefits__columns {
+  width: 100%;
+  max-width: 1117px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.healthcare-benefits__column {
+  min-width: 178px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 27px;
+  margin-left: 27px;
+  border-left: 1px solid #d6dceb;
+}
+
+.healthcare-benefits__column:first-child {
+  padding-left: 0;
+  margin-left: 0;
+  border-left: none;
+}
+
+.healthcare-benefits__column-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.healthcare-benefits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.healthcare-benefits__list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464554;
+}
+
+.healthcare-benefits__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .healthcare-benefits {
+    min-height: auto;
+    padding: 64px 20px;
+  }
+
+  .healthcare-benefits__columns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .healthcare-benefits__column {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+    border-top: 1px solid #d6dceb;
+    padding-top: 24px;
+  }
+
+  .healthcare-benefits__column:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}

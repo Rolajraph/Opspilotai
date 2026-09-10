@@ -43,6 +43,8 @@ const FAQS = [
  * FAQ accordion — one question open at a time, PlusCircle when
  * collapsed, MinusCircle when expanded.
  */
+
+
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(-1);
 

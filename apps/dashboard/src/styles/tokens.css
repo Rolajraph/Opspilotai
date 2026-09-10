@@ -1,0 +1,19 @@
+:root {
+  --color-white: #ffffff;
+  --color-primary: #4648d4;
+  --color-primary-light: #acadff;
+
+  --color-sidebar-bg: #0b1c30;
+  --color-page-bg: #f5f8ff;
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius-pill: 50px;
+  --radius-button: 8px;
+  --radius-card: 12px;
+}

@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import heroPattern from "../../assets/images/bg-hero-pattern.png";
 import trustBarLogos from "../../assets/images/logo-trustbar.png";
 import "./Hero.css";
@@ -6,7 +5,7 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <section className="hero">
-      <Navbar />
+    
 
       <img src={heroPattern} alt="" aria-hidden="true" className="hero__mesh" />
       <div className="hero__content">

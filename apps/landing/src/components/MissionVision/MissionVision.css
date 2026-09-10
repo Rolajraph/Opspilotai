@@ -1,0 +1,356 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  position: relative;
+  width: 100%;
+  min-height: 555px;
+  background: linear-gradient(180deg, #c8d3e8 0%, #e5eeff 100%);
+  padding: 100px 24px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer__top {
+  width: 100%;
+  max-width: 1236px;
+  display: flex;
+  justify-content: space-between;
+  gap: 43px;
+  box-sizing: border-box;
+}
+
+.footer__brand {
+  width: 294px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.footer__logo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__logo-icon {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background: var(--color-primary);
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.footer__logo-text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  color: #131b2e;
+}
+
+.footer__tagline {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #464554;
+  margin: 0;
+}
+
+.footer__column {
+  width: 206px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.footer__column-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #464554;
+  margin: 0;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  color: #464554;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+.footer__list--socials {
+  gap: 12px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__copyright {
+  margin-top: 43px;
+  margin-bottom: 24px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  color: #464554;
+  text-align: center;
+}
+
+.footer__wordmark-img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  display: block;
+}
+
+/* =========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 80px 32px 0;
+  }
+
+  .footer__top {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    min-height: auto;
+    padding: 64px 20px 0;
+  }
+
+  .footer__top {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 24px;
+  }
+
+  /* Make brand and wordmark span full width of the grid */
+  .footer__brand {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .footer__column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 48px 16px 0;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer__logo-text {
+    font-size: 18px;
+  }
+
+  .footer__tagline {
+    font-size: 15px;
+  }
+
+  .footer__column-title {
+    font-size: 15px;
+  }
+
+  .footer__link {
+    font-size: 13px;
+  }
+
+  .footer__copyright {
+    margin-top: 32px;
+    font-size: 13px;
+  }
+}/* =========================================================
+   MISSION VISION
+   ========================================================= */
+
+.mission-vision {
+  width: 100%;
+  min-height: 405px;
+  background: #f5f8ff;
+  padding: 100px 24px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.mission-vision__grid {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  gap: 54px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.mission-vision__card {
+  flex: 1;
+  min-width: 0;
+  min-height: 185px;
+  background: #EEF1FE;
+  border-radius: 8px;
+  padding: 14px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.mission-vision__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.mission-vision__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #131b2e;
+  margin: 0;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.mission-vision__text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464554;
+  margin: 0;
+  max-width: 531px;
+}
+
+/* =========================================================
+   TABLET (1024px)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .mission-vision {
+    padding: 80px 24px;
+  }
+
+  .mission-vision__grid {
+    gap: 32px;
+  }
+}
+
+/* =========================================================
+   MOBILE / TABLET PHONE (768px)
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .mission-vision {
+    min-height: auto;
+    padding: 64px 20px;
+  }
+
+  .mission-vision__grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mission-vision__card {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .mission-vision__title {
+    font-size: 21px;
+  }
+
+  .mission-vision__text {
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES (480px)
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .mission-vision {
+    padding: 52px 16px;
+  }
+
+  .mission-vision__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .mission-vision__title {
+    font-size: 20px;
+  }
+
+  .mission-vision__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

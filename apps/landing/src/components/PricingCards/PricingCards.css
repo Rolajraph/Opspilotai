@@ -1,0 +1,332 @@
+/* =========================================================
+   PRICING CARDS SECTION
+   ========================================================= */
+
+.pricing-cards {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: transparent;
+  padding: 0 24px 100px;
+  margin-top: -100px; /* Reduced from -219px to prevent overlapping the email box */
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CARDS GRID
+   ========================================================= */
+
+.pricing-cards__grid {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 27px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   INDIVIDUAL CARD
+   ========================================================= */
+
+.pricing-cards__card {
+  width: 279px;
+  min-height: 604px;
+  background: #ffffff;
+  border: 12px solid #eef2fe;
+  border-radius: 24px;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.pricing-cards__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.pricing-cards__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pricing-cards__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #0b1c30;
+  margin: 0;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.pricing-cards__price {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  color: #131b2e;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.pricing-cards__description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #464554;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+/* =========================================================
+   INCLUDES
+   ========================================================= */
+
+.pricing-cards__includes {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #464554;
+  margin: 8px 0 0;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.pricing-cards__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.pricing-cards__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #464554;
+  min-width: 0;
+}
+
+.pricing-cards__features li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.pricing-cards__cta {
+  width: 100%;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 100px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TABLET (1024px)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .pricing-cards {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -60px;
+  }
+
+  .pricing-cards__grid {
+    max-width: 700px;
+    gap: 24px;
+  }
+
+  .pricing-cards__card {
+    width: 320px;
+  }
+}
+
+/* =========================================================
+   MOBILE / 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    padding: 0 20px 64px;
+    margin-top: -40px; /* Safe spacing so it clears the email container */
+  }
+
+  .pricing-cards__grid {
+    width: 100%;
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .pricing-cards__card {
+    width: 100%;
+    min-height: 560px;
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 20px 12px;
+  }
+
+  .pricing-cards__price {
+    font-size: 26px;
+  }
+
+  .pricing-cards__description {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .pricing-cards__features li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .pricing-cards__cta {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE / 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .pricing-cards {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: -30px;
+  }
+
+  .pricing-cards__grid {
+    max-width: 380px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-cards__card {
+    width: 100%;
+    max-width: 360px;
+    min-height: 0;
+    margin: 0 auto;
+    border-width: 10px;
+    padding: 20px 14px;
+  }
+
+  .pricing-cards__title {
+    font-size: 14px;
+  }
+
+  .pricing-cards__price {
+    font-size: 28px;
+  }
+
+  .pricing-cards__description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .pricing-cards__features li {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES / 375px
+   ========================================================= */
+
+@media (max-width: 375px) {
+  .pricing-cards {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: -20px;
+  }
+
+  .pricing-cards__grid {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .pricing-cards__card {
+    max-width: 100%;
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 18px 12px;
+  }
+
+  .pricing-cards__price {
+    font-size: 26px;
+  }
+
+  .pricing-cards__description {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .pricing-cards__features li {
+    font-size: 15px;
+  }
+
+  .pricing-cards__cta {
+    height: 46px;
+    font-size: 15px;
+  }
+}

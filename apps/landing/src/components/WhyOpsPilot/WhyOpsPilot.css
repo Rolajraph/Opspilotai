@@ -1,3 +1,7 @@
+/* =========================================================
+   WHY OPSPILOT
+   ========================================================= */
+
 .why-opspilot {
   width: 100%;
   min-height: 969px;
@@ -6,9 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .why-opspilot__header {
+  width: 100%;
   max-width: 988px;
   display: flex;
   flex-direction: column;
@@ -16,6 +26,7 @@
   gap: 16px;
   text-align: center;
   margin-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .why-opspilot__heading {
@@ -29,6 +40,7 @@
 }
 
 .why-opspilot__subtext {
+  width: 100%;
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 24px;
@@ -38,32 +50,53 @@
   margin: 0;
 }
 
+/* =========================================================
+   GRID
+   ========================================================= */
+
 .why-opspilot__grid {
   width: 100%;
   max-width: 1140px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 54px 35px;
+  box-sizing: border-box;
 }
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
 .why-opspilot__card {
+  width: 100%;
+  min-width: 0;
   background: #dae2fd;
   border-radius: 8px;
   padding: 14px 11px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  box-sizing: border-box;
 }
+
+/* =========================================================
+   ICON
+   ========================================================= */
 
 .why-opspilot__icon {
   width: 48px;
   height: 48px;
-  border-radius: 200%;
+  border-radius: 50%;
   background: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
 
 .why-opspilot__card-title {
   font-family: var(--font-body);
@@ -74,6 +107,10 @@
   margin: 0;
 }
 
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
 .why-opspilot__card-description {
   font-family: var(--font-body);
   font-weight: 400;
@@ -83,31 +120,91 @@
   margin: 0;
 }
 
-/* Tablet: 2 columns */
-@media (max-width: 900px) {
-  .why-opspilot__grid {
-    grid-template-columns: repeat(2, 1fr);
+/* =========================================================
+   TABLET (1024px)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .why-opspilot {
+    padding: 80px 24px 64px;
+  }
+
+  .why-opspilot__header {
+    margin-bottom: 48px;
   }
 
   .why-opspilot__heading {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 130%;
   }
 
   .why-opspilot__subtext {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
+  }
+
+  .why-opspilot__grid {
+    max-width: 760px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
   }
 }
 
-/* Mobile: single column */
-@media (max-width: 600px) {
+/* =========================================================
+   MOBILE / TABLET PHONE (768px) - Keeps 2 columns side by side
+   ========================================================= */
+
+@media (max-width: 768px) {
   .why-opspilot {
-    padding: 64px 20px 64px;
     min-height: auto;
+    padding: 64px 20px;
   }
 
   .why-opspilot__header {
     margin-bottom: 40px;
+    gap: 12px;
+  }
+
+  .why-opspilot__heading {
+    font-size: 24px;
+  }
+
+  .why-opspilot__subtext {
+    font-size: 17px;
+    line-height: 150%;
+  }
+
+  .why-opspilot__grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+  .why-opspilot__card {
+    padding: 14px 10px;
+  }
+
+  .why-opspilot__card-title {
+    font-size: 21px;
+  }
+
+  .why-opspilot__card-description {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES (480px and below) - Stacks to single column
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .why-opspilot {
+    padding: 52px 16px 52px;
+  }
+
+  .why-opspilot__header {
+    margin-bottom: 32px;
   }
 
   .why-opspilot__heading {
@@ -115,8 +212,63 @@
     line-height: 130%;
   }
 
+  .why-opspilot__subtext {
+    font-size: 16px;
+  }
+
   .why-opspilot__grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  .why-opspilot__card {
+    padding: 16px;
+  }
+
+  .why-opspilot__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .why-opspilot__card-title {
+    font-size: 21px;
+  }
+
+  .why-opspilot__card-description {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES (360px)
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .why-opspilot {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .why-opspilot__heading {
+    font-size: 20px;
+  }
+
+  .why-opspilot__subtext {
+    font-size: 15px;
+  }
+
+  .why-opspilot__card {
+    padding: 14px;
+  }
+
+  .why-opspilot__card-title {
+    font-size: 20px;
+  }
+
+  .why-opspilot__card-description {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
