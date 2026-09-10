@@ -99,13 +99,12 @@ export default function Navbar() {
                     >
                       <div className="navbar__rich-dropdown-grid navbar__rich-dropdown-grid--single">
                         {link.dropdown.map((item) => (
-                          
-                            <a
+                          <a
                             key={item.label}
                             href={item.href}
                             className="navbar__rich-dropdown-item"
                             role="menuitem"
-                            >
+                          >
                             <span className="navbar__rich-dropdown-title">
                               {item.label}
                             </span>
@@ -167,6 +166,16 @@ export default function Navbar() {
               </a>
             ),
           )}
+
+          {/* Mobile Actions Container (Includes Sign In & Demo for mobile viewports) */}
+          <div className="navbar__mobile-actions">
+            <a href="http://localhost:5174" className="navbar__signin navbar__signin--mobile">
+              Sign In
+            </a>
+            <a href="/request-demo" className="navbar__cta navbar__cta--mobile">
+              Request a Demo
+            </a>
+          </div>
         </nav>
 
         <div className="navbar__actions">
