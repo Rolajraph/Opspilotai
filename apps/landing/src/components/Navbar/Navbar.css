@@ -517,7 +517,7 @@
    * Actions
    */
 
-  .navbar__signin {
+  .navbar__actions {
     display: none;
   }
 
@@ -563,7 +563,7 @@
   }
 
   .navbar__actions {
-    gap: 8px;
+    display: none;
   }
 
   .navbar__cta {
@@ -609,7 +609,7 @@
   }
 
   .navbar__actions {
-    gap: 4px;
+    display: none;
   }
 
   .navbar__mobile-toggle {
