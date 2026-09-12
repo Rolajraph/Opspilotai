@@ -113,7 +113,7 @@ export default function PricingCards() {
               ))}
             </ul>
 
-            <button type="button" className="pricing-cards__cta">
+            <button type="https://opspilotai-landing.onrender.com/request-demo" className="pricing-cards__cta">
               Request a demo
             </button>
           </div>

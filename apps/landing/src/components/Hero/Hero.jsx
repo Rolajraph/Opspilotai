@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a href="/request-demo" className="hero__btn hero__btn--primary">
+          <a href="https://opspilotai-landing.onrender.com/request-demo" className="hero__btn hero__btn--primary">
             Request a demo
           </a>
           <a href="/solutions" className="hero__btn hero__btn--secondary">

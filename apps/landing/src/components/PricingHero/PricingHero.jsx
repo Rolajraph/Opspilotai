@@ -32,7 +32,7 @@ export default function PricingHero() {
             onChange={(event) => setEmail(event.target.value)}
             className="pricing-hero__input"
           />
-          <button type="submit" className="pricing-hero__cta">
+          <button type="https://opspilotai-landing.onrender.com/request-demo" className="pricing-hero__cta">
             Request a demo
           </button>
         </form>

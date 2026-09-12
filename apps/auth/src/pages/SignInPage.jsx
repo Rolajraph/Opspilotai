@@ -134,7 +134,7 @@ export default function SignInPage() {
               </button>
               <p className="signin__demo-link">
                 Don&apos;t have an account?{" "}
-                <a href="/request-demo" className="signin__demo-link-span">
+                <a href="https://opspilotai-landing.onrender.com" className="signin__demo-link-span">
                   Get a Demo
                 </a>
               </p>
