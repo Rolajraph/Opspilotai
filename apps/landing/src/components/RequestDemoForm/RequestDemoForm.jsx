@@ -34,7 +34,8 @@ export default function RequestDemoForm() {
     setStatus("submitting");
 
     try {
-      const response = await fetch("http://localhost:5000/api/demo-requests", {
+      const response = await fetch("https://opspilotai-m08y.onrender.com/api/demo-requests",
+         {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
