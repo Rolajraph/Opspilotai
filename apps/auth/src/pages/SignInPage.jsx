@@ -18,7 +18,8 @@ export default function SignInPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch("https://opspilotai-m08y.onrender.com/api/auth/login",
+        {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -35,7 +36,7 @@ export default function SignInPage() {
       localStorage.setItem("opspilot_token", data.token);
       localStorage.setItem("opspilot_user", JSON.stringify(data.user));
 
-      window.location.href = "http://localhost:5175";
+      window.location.href = "http://opspilotai-dashboard.onrender.com";
     } catch (err) {
       setError("Unable to connect to the server. Please try again.");
       setIsSubmitting(false);

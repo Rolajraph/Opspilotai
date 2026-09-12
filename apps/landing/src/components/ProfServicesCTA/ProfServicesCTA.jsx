@@ -26,7 +26,7 @@ export default function ProfServicesCTA() {
               Request a demo
             </a>
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="prof-services-cta__btn prof-services-cta__btn--secondary"
             >
               Sign In

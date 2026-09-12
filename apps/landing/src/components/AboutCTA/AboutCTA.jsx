@@ -26,7 +26,7 @@ export default function AboutCTA() {
             >
               Request a demo
             </a>
-            <a href="http://localhost:5174" className="about-cta__btn about-cta__btn--secondary">
+            <a href="http://opspilotai-auth.onrender.com" className="about-cta__btn about-cta__btn--secondary">
               Sign In
             </a>
           </div>

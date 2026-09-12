@@ -25,7 +25,7 @@ export default function HealthcareCTA() {
               Request a demo
             </a>
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="healthcare-cta__btn healthcare-cta__btn--secondary"
             >
               Sign In

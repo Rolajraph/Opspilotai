@@ -26,7 +26,7 @@ export default function UCProfServCTA() {
             </a>
 
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="uc-prof-serv-cta__btn uc-prof-serv-cta__btn--secondary"
             >
               Sign In

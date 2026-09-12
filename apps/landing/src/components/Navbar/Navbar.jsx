@@ -169,7 +169,7 @@ export default function Navbar() {
 
           {/* Mobile Actions Drawer Container */}
           <div className="navbar__mobile-actions">
-            <a href="http://localhost:5174" className="navbar__signin">
+            <a href="http://opspilotai-auth.onrender.com" className="navbar__signin">
               Sign In
             </a>
             <a href="/request-demo" className="navbar__cta">
@@ -179,7 +179,7 @@ export default function Navbar() {
         </nav>
 
         <div className="navbar__actions">
-          <a href="http://localhost:5174" className="navbar__signin">
+          <a href="http://opspilotai-auth.onrender.com" className="navbar__signin">
             Sign In
           </a>
           <a href="/request-demo" className="navbar__cta">

@@ -24,7 +24,7 @@ export default function ManufacturingCTA() {
               Request a demo
             </a>
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="manufacturing-cta__btn manufacturing-cta__btn--secondary"
             >
               Sign In

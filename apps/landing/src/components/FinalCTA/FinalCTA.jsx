@@ -21,7 +21,7 @@ export default function FinalCTA() {
             <a href="/request-demo" className="final-cta__btn final-cta__btn--primary">
               Request a demo
             </a>
-            <a href="http://localhost:5174" className="final-cta__btn final-cta__btn--secondary">
+            <a href="ttp://opspilotai-auth.onrender.com" className="final-cta__btn final-cta__btn--secondary">
               Sign In
             </a>
           </div>

@@ -26,7 +26,7 @@ export default function EducationCTA() {
             </a>
 
             <a
-              href="http://localhost:5174"
+              href="ttp://opspilotai-auth.onrender.com"
               className="education-cta__btn education-cta__btn--secondary"
             >
               Sign In

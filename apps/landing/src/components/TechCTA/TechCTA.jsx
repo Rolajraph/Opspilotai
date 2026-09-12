@@ -21,7 +21,7 @@ export default function TechCTA() {
               Request a demo
             </a>
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="tech-cta__btn tech-cta__btn--secondary"
             >
               Sign In

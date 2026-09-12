@@ -24,7 +24,7 @@ export default function SolTechCTA() {
               Request a demo
             </a>
             <a
-              href="http://localhost:5174"
+              href="http://opspilotai-auth.onrender.com"
               className="sol-tech-cta__btn sol-tech-cta__btn--secondary"
             >
               Sign In
